@@ -1,0 +1,81 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width; initial-scale=1" />
+   <link rel="stylesheet" href="css/all.css" type="text/css" />
+   <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+   <script type="text/javascript" src="js/main.js"></script>
+   <title>Pizza Five</title>
+</head>
+
+<body>
+   <div id="wrapper">
+      <section class="add_pasta_fungi">
+         <div class="order_product">
+            <img src="./img/pasta_fungi.png" alt="fungi">
+            <div class="name_price">
+               <p>Фунгі</p>
+               <p>320г / 70 грн.</p>
+            </div>
+            <p>
+               (Паста з грибами у вершковому соусі)
+            </p>
+            <ul class="number_list">
+               <li>
+                  <p class="number">
+                     Кількість
+                  </p>
+               </li>
+               <li>
+                  <button id="minus"></button>
+               </li>
+               <li>
+                  <p id="counter">0</p>
+               </li>
+               <li>
+                  <button id="plus"></button>
+               </li>
+            </ul>
+         </div>
+
+         <div class="order_form">
+            <button class="cancel"></button>
+            <div class="add_to">
+               <p>Додати в пасту</p>
+            </div>
+            <ul class="ingrdients">
+               <li>
+                  <button id="mozarella"></button>
+               </li>
+               <li>
+                  <button id="parmezan"></button>
+               </li>
+               <li>
+                  <button id="chicken"></button>
+               </li>
+               <li>
+                  <button id="tomatos"></button>
+               </li>
+               <li>
+                  <button id="champignon"></button>
+               </li>
+               <li>
+                  <button id="onion"></button>
+               </li>
+            </ul>
+            <p>Інгредієнти: (0)</p>
+            <button id="add_to_basket">
+               Додати до кошика (0грн)
+            </button>
+         </div>
+      </section>
+   </div>
+</body>
+
+</html>

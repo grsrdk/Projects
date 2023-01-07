@@ -1,0 +1,276 @@
+.add_drinks_cherry_juice {
+   @include box;
+   display: flex;
+   justify-content: space-around;
+   width: 1461px;
+   height: 946px;
+   background: $pink;
+   border-radius: 20px;
+   margin: 0 auto 0 auto;
+
+   .order_product {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 632px;
+      height: 860px;
+      margin: 48px 0 0 0;
+
+      img {
+         border: 1px solid $orange;
+         border-radius: 16px;
+         width: 632px;
+         height: 632px;
+      }
+
+      .name_price {
+         display: flex;
+         justify-content: center;
+
+         p {
+            @include font;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 60px;
+            margin: 20px 0 0 0;
+         }
+      }
+
+   }
+
+   .order_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 568px;
+      padding: 12px 0 12px 0;
+
+      .cancel {
+         align-self: flex-end;
+         @include btn_minus_plus_cancel;
+         background-image: url('../img/cross_cancel.png');
+
+         &:hover {
+            background-image: url('../img/cross_cancel_on.png');
+            box-shadow: none;
+            cursor: pointer;
+         }
+      }
+
+      .half_liter {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+
+         .liters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 316px;
+            height: 104px;
+            background-color: $white;
+            align-self: center;
+            @include font;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 60px;
+            border: 1px solid $orange;
+            border-radius: 8px;
+            margin: 10px 0 0 0;
+         }
+
+         .number_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0 50px 0;
+
+            li {
+               padding: 0 13px 0 13px;
+
+               .number {
+                  @include font;
+                  font-weight: 900;
+                  font-size: 32px;
+                  line-height: 60px;
+               }
+
+               #counter {
+                  @include font;
+                  font-weight: 500;
+                  font-size: 32px;
+               }
+
+               #minus {
+                  @include btn_minus_plus_cancel;
+                  background-image: url('../img/minus.png');
+
+                  &:hover {
+                     background-image: url('../img/minus_selected.png');
+                     box-shadow: none;
+                     cursor: pointer;
+                  }
+               }
+
+               #plus {
+                  @include btn_minus_plus_cancel;
+                  background-image: url('../img/plus.png');
+
+                  &:hover {
+                     background-image: url('../img/plus_selected.png');
+                     box-shadow: none;
+                     cursor: pointer;
+                  }
+               }
+            }
+
+         }
+
+      }
+
+      .one_liter {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+
+         .liters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 316px;
+            height: 104px;
+            background-color: $white;
+            align-self: center;
+            @include font;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 60px;
+            border: 1px solid $orange;
+            border-radius: 8px;
+         }
+
+         .number_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0 50px 0;
+
+            li {
+               padding: 0 13px 0 13px;
+
+               .number {
+                  @include font;
+                  font-weight: 900;
+                  font-size: 32px;
+                  line-height: 60px;
+               }
+
+               #counter {
+                  @include font;
+                  font-weight: 500;
+                  font-size: 32px;
+               }
+
+               #minus {
+                  @include btn_minus_plus_cancel;
+                  background-image: url('../img/minus.png');
+
+                  &:hover {
+                     background-image: url('../img/minus_selected.png');
+                     box-shadow: none;
+                     cursor: pointer;
+                  }
+               }
+
+               #plus {
+                  @include btn_minus_plus_cancel;
+                  background-image: url('../img/plus.png');
+
+                  &:hover {
+                     background-image: url('../img/plus_selected.png');
+                     box-shadow: none;
+                     cursor: pointer;
+                  }
+               }
+            }
+
+         }
+
+      }
+
+      .two_liters {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+
+         .liters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 316px;
+            height: 104px;
+            background-color: $white;
+            align-self: center;
+            @include font;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 60px;
+            border: 1px solid $orange;
+            border-radius: 8px;
+         }
+
+         .number_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0 0 0;
+
+            li {
+               padding: 0 13px 0 13px;
+
+               .number {
+                  @include font;
+                  font-weight: 900;
+                  font-size: 32px;
+                  line-height: 60px;
+               }
+
+               #counter {
+                  @include font;
+                  font-weight: 500;
+                  font-size: 32px;
+               }
+
+               #minus {
+                  @include btn_minus_plus_cancel;
+                  background-image: url('../img/minus.png');
+
+                  &:hover {
+                     background-image: url('../img/minus_selected.png');
+                     box-shadow: none;
+                     cursor: pointer;
+                  }
+               }
+
+               #plus {
+                  @include btn_minus_plus_cancel;
+                  background-image: url('../img/plus.png');
+
+                  &:hover {
+                     background-image: url('../img/plus_selected.png');
+                     box-shadow: none;
+                     cursor: pointer;
+                  }
+               }
+            }
+
+         }
+
+      }
+
+      #add_to_basket {
+         @include btn_add_to_basket;
+         margin: 120px 0 50px 0;
+      }
+   }
+}

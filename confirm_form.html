@@ -1,0 +1,112 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width; initial-scale=1" />
+   <link rel="stylesheet" href="css/all.css" type="text/css" />
+   <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+   <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+   <link rel="stylesheet" href="css/slick.css" type="text/css" />
+   <link rel="stylesheet" href="css/slick_changes.css" type="text/css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+   <script type="text/javascript" src="js/slick.min.js"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+   <title>Pizza Five</title>
+</head>
+
+<body>
+   <div id="wrapper">
+      <section class="confirm_form">
+         <button class="cancel"></button>
+         <form action="#">
+            <P>Дані для замовлення</P>
+            <ul>
+               <li>
+                  <input class="name" type="text" placeholder="Ім'я" required name="name">
+               </li>
+               <li>
+                  <input class="tel" type="tel" placeholder="Тел. +38 0 (...) ... .. .." required name="tel">
+               </li>
+               <li>
+                  <input class="street" type="text" placeholder="Вул." required name="street">
+               </li>
+               <li>
+                  <input class="building" type="text" placeholder="Буд." required name="building">
+               </li>
+               <li>
+                  <input class="flat" type="text" placeholder="Кв." required name="flat">
+               </li>
+               <li>
+                  <input class="entrance" type="text" placeholder="Під’їзд" required name="entrance">
+               </li>
+               <li>
+                  <input class="floor" type="text" placeholder="Поверх" required name="floor">
+               </li>
+               <li>
+                  <input class="flatware" type="text" placeholder="Кількість приборів" required name="flatware">
+               </li>
+               <li>
+                  <textarea placeholder="Коментар" name="comment"></textarea>
+               </li>
+            </ul>
+
+            <div class="pay_tabs">
+               <p>Оберіть спосіб оплати</p>
+               <ul id="menu-tabs" class="tabs">
+                  <li class="t1">
+                     <button>Готівкою</button>
+                  </li>
+                  <li class="t2">
+                     <button>Термінал</button>
+                  </li>
+                  <li class="t3">
+                     <button>On-line оплата</button>
+                  </li>
+               </ul>
+            </div>
+
+
+            <div id="tab-cont" class="tab-content">
+               <div class="t1 tab">
+                  <div class="block">
+                     <input type="text" placeholder="Залишок з якої сумми" required name="remnant">
+                  </div>
+               </div>
+               <div class="t2 tab">
+                  <div class="block">
+                  </div>
+               </div>
+               <div class="t3 tab">
+                  <div class="block">
+                     <div class="pay_block">
+                        <a href="#">On-line оплата</a>
+                        <ul>
+                           <li>
+                              <img src="./img/pay_google.png" alt="google pay">
+                           </li>
+                           <li>
+                              <img src="./img/mastercard_form.png" alt="mastercard">
+                           </li>
+                           <li>
+                              <img src="./img/pay_visa.png" alt="visa">
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+
+            <input class="btn_confirm_order" type="submit" value="Підтвердити замовлення" name="confirm_order">
+         </form>
+      </section>
+   </div>
+</body>
+
+</html>

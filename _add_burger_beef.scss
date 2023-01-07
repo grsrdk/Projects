@@ -1,0 +1,194 @@
+.add_burger_beef {
+   @include box;
+   display: flex;
+   justify-content: space-around;
+   width: 1461px;
+   height: 946px;
+   background: $pink;
+   border-radius: 20px;
+   margin: 0 auto 0 auto;
+
+   .order_product {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 632px;
+      height: 860px;
+      margin: 48px 0 0 0;
+
+      img {
+         border: 1px solid $orange;
+         border-radius: 16px;
+         width: 632px;
+         height: 632px;
+      }
+
+      .name_price {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+
+         p {
+            @include font;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 60px;
+         }
+      }
+
+      p {
+         @include font;
+         text-align: center;
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 25px;
+      }
+
+      .number_list {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 30px 0 0 0;
+
+         li {
+            padding: 0 13px 0 13px;
+
+            .number {
+               @include font;
+               font-weight: 900;
+               font-size: 32px;
+               line-height: 60px;
+            }
+
+            #counter {
+               @include font;
+               font-weight: 500;
+               font-size: 32px;
+            }
+
+            #minus {
+               @include btn_minus_plus_cancel;
+               background-image: url('../img/minus.png');
+
+               &:hover {
+                  background-image: url('../img/minus_selected.png');
+                  box-shadow: none;
+                  cursor: pointer;
+               }
+            }
+
+            #plus {
+               @include btn_minus_plus_cancel;
+               background-image: url('../img/plus.png');
+
+               &:hover {
+                  background-image: url('../img/plus_selected.png');
+                  box-shadow: none;
+                  cursor: pointer;
+               }
+            }
+         }
+
+      }
+   }
+
+   .order_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 568px;
+      padding: 12px 0 12px 0;
+
+      .cancel {
+         align-self: flex-end;
+         @include btn_minus_plus_cancel;
+         background-image: url('../img/cross_cancel.png');
+
+         &:hover {
+            background-image: url('../img/cross_cancel_on.png');
+            box-shadow: none;
+            cursor: pointer;
+         }
+      }
+
+      .add_to {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 0 0 0 0;
+         background: $white;
+         border: 1px solid $orange;
+         border-radius: 8px;
+         padding: 22px 40px 22px 40px;
+
+         p {
+            @include font;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 60px;
+         }
+      }
+
+      .ingrdients {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+
+         li {
+            width: 172px;
+            height: 172px;
+            margin: 0 0 71px 0;
+
+            &:nth-child(1) {
+               margin: 0 56px 71px 0;
+            }
+
+            &:nth-child(3) {
+               margin: 0 56px 71px 0;
+            }
+
+            p {
+               @include font;
+               font-weight: 500;
+               font-size: 20px;
+               line-height: 37px;
+               text-align: center;
+            }
+
+            #garlic {
+               background-image: url('../img/souce_garlic.png');
+               @include add_ingredient;
+            }
+
+            #sweet_sour {
+               background-image: url('../img/souce_sweet_sour.png');
+               @include add_ingredient;
+            }
+
+            #tomato {
+               background-image: url('../img/souce_tomato.png');
+               @include add_ingredient;
+            }
+
+            #cranberry {
+               background-image: url('../img/souce_cranberry.png');
+               @include add_ingredient;
+            }
+
+         }
+
+      }
+
+      p {
+         @include font;
+         font-weight: 900;
+         font-size: 32px;
+         line-height: 60px;
+      }
+
+      #add_to_basket {
+         @include btn_add_to_basket;
+      }
+   }
+}
